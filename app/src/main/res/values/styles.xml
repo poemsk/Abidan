@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:colorPrimary" tools:ignore="NewApi">@color/colorPrimary</item>
+    <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/colorPrimaryDark</item>
+    <!-- Customize your theme here. -->
+  </style>
+
+  <style name="myWordTextView">
+    <item name="android:textSize">@dimen/text_size_medium</item>
+    <item name="android:textColor">@color/text_title</item>
+    <item name="android:padding">@dimen/spacing_minor</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="myTypeTextView">
+    <item name="android:textSize">@dimen/text_size_micro</item>
+    <item name="android:textColor">@color/text_type</item>
+    <item name="android:padding">@dimen/spacing_minor</item>
+  </style>
+
+  <style name="myBodyTextView">
+    <item name="android:textSize">@dimen/text_size_small</item>
+    <item name="android:textColor">@color/text_body</item>
+    <item name="android:padding">@dimen/spacing_minor</item>
+  </style>
+
+</resources>

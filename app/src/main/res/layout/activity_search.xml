@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="@color/background"
+                tools:context=".SearchActivity">
+  <include
+      android:id="@+id/toolbar"
+      layout="@layout/toolbar"/>
+  <ListView
+      android:layout_below="@id/toolbar"
+      android:id="@+id/word_list"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:divider="@android:color/transparent"
+      android:listSelector="@android:color/transparent"
+      android:padding="@dimen/spacing_minor"
+      android:dividerHeight="8dp"/>
+
+</RelativeLayout>
