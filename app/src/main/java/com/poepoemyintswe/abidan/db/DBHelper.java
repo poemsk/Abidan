@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import com.poepoemyintswe.abidan.Utils.SharePref;
+import com.poepoemyintswe.abidan.utils.SharePref;
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 /**

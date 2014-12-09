@@ -1,4 +1,4 @@
-package com.poepoemyintswe.abidan.Adapter;
+package com.poepoemyintswe.abidan.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -1,11 +1,11 @@
-package com.poepoemyintswe.abidan.Async;
+package com.poepoemyintswe.abidan.async;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.poepoemyintswe.abidan.Adapter.WordAdapter;
+import com.poepoemyintswe.abidan.adapter.WordAdapter;
 import com.poepoemyintswe.abidan.models.Word;
 import java.util.ArrayList;
 
@@ -17,7 +17,6 @@ public class WordAsync extends AsyncTask<Cursor, Void, ArrayList<Word>> {
   private static WordAsync wordAsync;
   private Context mContext;
   private ListView mListView;
-  private ArrayList<Word> wordArrayList;
 
   public WordAsync(Context mContext, ListView mListView) {
     this.mContext = mContext;
@@ -26,12 +25,13 @@ public class WordAsync extends AsyncTask<Cursor, Void, ArrayList<Word>> {
 
   @Override protected void onPreExecute() {
     super.onPreExecute();
-    wordArrayList = new ArrayList<>();
-    wordArrayList.clear();
     mListView.setAdapter(null);
   }
 
   @Override protected ArrayList<Word> doInBackground(Cursor... cursors) {
+
+    ArrayList<Word> wordArrayList = new ArrayList<>();
+    wordArrayList.clear();
     Cursor c = cursors[0];
 
     try {
@@ -59,7 +59,7 @@ public class WordAsync extends AsyncTask<Cursor, Void, ArrayList<Word>> {
     super.onPostExecute(words);
     try {
 
-      WordAdapter adapter = new WordAdapter(mContext, wordArrayList);
+      WordAdapter adapter = new WordAdapter(mContext, words);
       if (adapter.getCount() == 0) {
         Toast.makeText(mContext, "Nothing to show", Toast.LENGTH_LONG).show();
       } else {

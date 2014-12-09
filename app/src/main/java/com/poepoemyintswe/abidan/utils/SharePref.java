@@ -1,4 +1,4 @@
-package com.poepoemyintswe.abidan.Utils;
+package com.poepoemyintswe.abidan.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

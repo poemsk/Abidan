@@ -17,8 +17,8 @@ import android.widget.ListView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.poepoemyintswe.abidan.Async.WordAsync;
-import com.poepoemyintswe.abidan.Utils.SharePref;
+import com.poepoemyintswe.abidan.async.WordAsync;
+import com.poepoemyintswe.abidan.utils.SharePref;
 import com.poepoemyintswe.abidan.db.DBHelper;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
